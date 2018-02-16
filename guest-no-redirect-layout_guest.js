@@ -3126,7 +3126,7 @@ angular.module('tetherApp')
       },
 
       isGuest: function () {
-        return false;
+        return true;
       },
 
       isAuth: function () {
