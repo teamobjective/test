@@ -3856,7 +3856,7 @@ angular.module('tetherApp')
         isPublic: true,
         guestOnly: true
       })
-      .state('layout_guest.signup', {
+      .state('layout_guest.signup22', {
         url: '/signup',
         templateUrl: 'modules/guest/signup.html',
         controller: 'SignupCtrl',
@@ -3892,13 +3892,10 @@ angular.module('tetherApp')
         isPublic: true,
         guestOnly: true
       })
-      .state('layout_guest.invite', {
+      .state('layout_guest.signup', {
         url: '/invite',
         templateUrl: 'modules/guest/invite.html',
         controller: 'InviteCtrl',
-        controller: ["$state", function($state){
-          $state.go('layout_guest.signup');
-        }],
         isPublic: true,
         guestOnly: true
       })
