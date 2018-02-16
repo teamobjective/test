@@ -1,5 +1,7 @@
 'use strict';
 
+var app = angular.module("tetherApp", []);
+
 angular.module('tetherApp', [
     'ngMaterial',
     'ngAnimate',
