@@ -171,7 +171,8 @@ angular.module('tetherApp', [
      * Check access for requested pages
      */
     $rootScope.$on('$stateChangeStart', function(event, toState) {
-      if (!toState.isPublic && User.isGuest()) {
+     /**
+     * Che if (!toState.isPublic && User.isGuest()) {
         event.preventDefault();
         $state.go('layout_guest.login');
       }
@@ -191,7 +192,7 @@ angular.module('tetherApp', [
           });
       } else {
         User.redirectGeoBlocked();
-      }
+      }*/
     });
   }]);
 
@@ -3827,7 +3828,7 @@ angular.module('tetherApp')
     $locationProvider.html5Mode(false);
     $locationProvider.hashPrefix('!');
 
-    $urlRouterProvider.otherwise('/layout_guest.signup');
+    $urlRouterProvider.otherwise('/layout_app');
 
     $stateProvider
       /**
