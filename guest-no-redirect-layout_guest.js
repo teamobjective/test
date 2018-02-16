@@ -3827,7 +3827,7 @@ angular.module('tetherApp')
     $locationProvider.html5Mode(false);
     $locationProvider.hashPrefix('!');
 
-    $urlRouterProvider.otherwise('/layout_guest');
+    $urlRouterProvider.otherwise('/layout_guest.signup');
 
     $stateProvider
       /**
