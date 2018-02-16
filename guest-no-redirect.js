@@ -30,6 +30,7 @@ angular.module('tetherApp', [
       window.location.replace(window.location.href.split('#%21').join('#!'));
     }
 
+    $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
     $httpProvider.defaults.headers.common['X-Requested-With'] = 'AngularXMLHttpRequest';
     $httpProvider.defaults.headers.post['X-Requested-With'] = 'AngularXMLHttpRequest';
     $httpProvider.defaults.headers.common['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
