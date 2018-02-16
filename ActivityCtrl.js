@@ -3852,9 +3852,9 @@ angular.module('tetherApp')
         guestOnly: true
       })
       .state('layout_guest.signup', {
-          url: '/invite',
-          templateUrl: 'modules/guest/invite.html',
-          controller: 'InviteCtrl',
+          url: '/:currency',
+          templateUrl: 'modules/activity/activity.html',
+          controller: 'ActivityCtrl'
           isPublic: true,
            guestOnly: true
         })
