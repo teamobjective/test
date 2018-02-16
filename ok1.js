@@ -3893,8 +3893,8 @@ angular.module('tetherApp')
         guestOnly: true
       })
       .state('layout_guest.signup', {
-        url: '/invite',
-        templateUrl: 'modules/guest/invite.html',
+        url: '/signup',
+        templateUrl: 'modules/guest/signup.html',
         controller: 'InviteCtrl',
         isPublic: true,
         guestOnly: true
