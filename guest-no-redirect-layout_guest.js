@@ -3852,16 +3852,16 @@ angular.module('tetherApp')
         guestOnly: true
       })
       .state('layout_guest.signup', {
-        url: '/signup',
-        templateUrl: 'modules/guest/signup.html',
-        controller: 'SignupCtrl',
-        isPublic: true,
-        guestOnly: true
-      })
+          url: '/invite',
+          templateUrl: 'modules/guest/invite.html',
+          controller: 'InviteCtrl',
+          isPublic: true,
+           guestOnly: true
+        })
       .state('layout_guest.signupCode', {
         url: '/signup/:inviteCode',
-        templateUrl: 'modules/guest/signup.html',
-        controller: 'SignupCtrl',
+          templateUrl: 'modules/guest/invite.html',
+          controller: 'InviteCtrl',
         isPublic: true,
         guestOnly: true
       })
