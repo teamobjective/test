@@ -3128,7 +3128,7 @@ angular.module('tetherApp')
       },
 
       isAuth: function () {
-        return true;
+        return false;
       },
 
       clearAuthFlag: function () {
