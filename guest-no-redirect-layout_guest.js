@@ -3126,11 +3126,11 @@ angular.module('tetherApp')
       },
 
       isGuest: function () {
-        return true;
+        return false;
       },
 
       isAuth: function () {
-        return false;
+        return true;
       },
 
       clearAuthFlag: function () {
